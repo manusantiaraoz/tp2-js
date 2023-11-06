@@ -1,7 +1,13 @@
-// Escribe un programa que pida un número y diga si es divisible por 2
-const n1= parseInt(prompt("ingresa un numero"));
-if(n1%2==0){
-    document.write(`<p>${n1} es divisible en dos</p>`)
-}else{
-    document.write(`<p>${n1} no es divisible en dos</p>`)
+let num = prompt("Introduce un número entre: 1 y 50:");
+
+if (num > 50) {
+  console.log("El número es mayor que 50.");
+} else {
+  for (let i = 1; i <= num; i++) {
+    let fila = "";
+    for (let j = 1; j <= i; j++) {
+        fila += j + " ";
+    }
+    document.write(fila +"<br>");
+  }
 }

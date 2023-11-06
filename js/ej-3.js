@@ -1,2 +1,13 @@
-//Escribe un programa de una sola línea que escriba en la pantalla el resultado de sumar 3 + 5.
-document.write( `<p>el resulatado de la suma de 3 + 5 es: ${3+5}</p>` );
+/*
+3- Realiza un script que pida cadenas de texto  hasta que se pulse “cancelar”. Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión -.
+*/
+
+let cadena= "";
+
+do{
+    let nota = prompt("ingresa una palabra") + " - ";
+    cadena= cadena + nota;
+}while(confirm("continuar"));
+
+document.write(cadena);
+

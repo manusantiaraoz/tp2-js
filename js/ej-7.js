@@ -1,13 +1,13 @@
-//Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres.
+let num = prompt("Introduce un número entre 1 y 50:");
 
-const n1= parseInt(prompt("ingresa un numero"));
-const n2= parseInt(prompt("ingresa otro numero"));
-const n3= parseInt(prompt("ingresa otro numero"));
-
-if(n1>n2 && n1>n3){
-document.write(`<p>${n1} es el numero mayor</p>`)
-}else if(n2>n1 && n2>n3){
-    document.write(`<p>${n2} es el numero mayor</p>`)
-}else{
-    document.write(`<p>${n3} es el mayor</p>`)
+if (num > 50) {
+  console.log("El número es mayor que 50.");
+} else {
+  for (let i = num; i >= 1; i--) {
+    let fila = "";
+    for (let j = 1; j <= i; j++) {
+        fila += i + " ";
+    }
+    document.write(fila +"<br>");
+  }
 }

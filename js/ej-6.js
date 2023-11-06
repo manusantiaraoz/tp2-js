@@ -1,11 +1,21 @@
-//Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor.
-const n1= parseInt(prompt("ingresa un numero"));
-const n2= parseInt(prompt("ingresa otro numero"));
+/*
+6- Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma :
 
-if(n1>n2){
-document.write(`<p>${n1} es el numero mayor</p>`)
-}else if(n1<n2){
-    document.write(`<p>${n2} es el numero mayor</p>`)
-}else{
-    document.write(`<p>los numero son iguales</p>`)
-}
+1
+22
+333
+4444
+55555
+666666
+…….
+
+*/
+
+
+for (let i = 1; i <= 30; i++) {
+    let fila = '';
+    for (let j = 1; j <= i; j++) {
+      fila += i;
+    }
+    document.write(fila +"<br>");
+  }
